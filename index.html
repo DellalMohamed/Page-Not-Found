@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+        <div class="content">
+            <h2>404</h2>
+            <h4>Opps! Page is not found</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, architecto.</p>
+            <a href="#">Back To Home</a>
+        </div>
+    </div>
+    <script>
+        var cont = document.getElementById('container');
+        window.addEventListener('mousemove', function(e){
+            var x = e.clientX,
+                y = e.clientY;
+            cont.style.backgroundPositionX = x/5 +'px';
+            cont.style.backgroundPositionY = y/5 +'px';
+        })
+    </script>
+</body>
+</html>
